@@ -381,7 +381,7 @@ footer {
     }
 
     nav a {
-        font-size: 9px;
+        font-size: 6px;
     }
 
 
@@ -405,23 +405,24 @@ footer {
     }
 
     main ul {
-        gap: .3em;
+        gap: .5em;
     }
-
+/* 
     main ul li {
-        font-size: .5em;
-    }
+        font-size: .3em;
+    } */
 
     main ul li a img {
-        width: 1em;
-        height: 1em;
+        width: 3em;
+        height: 3em;
+        object-fit: cover;
     }
 
     main ul li a {
-        font-size: 1em;
-        gap: 8px;
+        font-size: .4em;
+        gap: 9px;
         border: 2px solid var(--white);
-        padding: 4px 1.2em;
+        padding: 4px 1em;
     }
 
 
@@ -446,10 +447,9 @@ footer {
     .section-about .card-left,
     .card-right {
         padding: 1em;
-        width: 30em;
+        width: 20em;
         gap: 3em;
-        height: 80vh;
-        width: 400px;
+        height: 80vh; 
     }
 
     .section-about .card-left h2,
@@ -596,10 +596,9 @@ footer {
 /* ============================ responsive tablet =================================== */
 
 
-
+/* 
 @media screen and (max-width : 481px) and (max-width:800px) {
 
-    /* ============================ responsive navbar =================================== */
     nav {
         width: 100vw;
     }
@@ -609,7 +608,6 @@ footer {
     }
 
 
-    /* ============================ responsive main section =================================== */
 
     main img {
         width: 9em;
@@ -650,7 +648,6 @@ footer {
 
 
 
-    /* ============================ responsive a propos de moi =================================== */
 
     .section-about {
         height: 1200px;
@@ -701,7 +698,6 @@ footer {
     }
 
 
-    /* ============================ responsive projects sections =================================== */
 
 
 
@@ -761,7 +757,6 @@ footer {
         height: 1em;
     }
 
-    /* ============================ responsive  sections contact =================================== */
 
 
     .section-contact {
@@ -811,4 +806,4 @@ footer {
     }
 
 
-}
+} */
