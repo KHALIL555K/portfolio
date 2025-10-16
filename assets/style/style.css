@@ -373,7 +373,7 @@ footer {
 
 
 
-@media screen and (max-width : 480px) {
+@media screen and (max-width : 480px) and (height:932px) and (-webkit-device-pixel-ratio:3) {
 
     /* ============================ responsive navbar =================================== */
     nav {
@@ -597,7 +597,7 @@ footer {
 
 
 
-@media screen and (min-width : 481px) and (max-width:800px) {
+@media only screen and (min-width : 481px) and (max-width:800px) and (height:852px) and (-webkit-device-pixel-ration:3) {
 
     nav {
         width: 100vw;
