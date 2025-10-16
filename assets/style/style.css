@@ -544,7 +544,7 @@ footer {
 
     .section-contact {
         padding: 1em;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .section-contact h1 {
@@ -596,8 +596,8 @@ footer {
 /* ============================ responsive tablet =================================== */
 
 
-/* 
-@media screen and (max-width : 481px) and (max-width:800px) {
+
+@media screen and (min-width : 481px) and (max-width:800px) {
 
     nav {
         width: 100vw;
@@ -635,12 +635,12 @@ footer {
     }
 
     main ul li a img {
-        width: 2em;
-        height: 2em;
+        width: 1em;
+        height: 1em;
     }
 
     main ul li a {
-        font-size: 2em;
+        font-size: .9em;
         gap: 10px;
         border: 2px solid var(--white);
         padding: 4px 1.5em;
@@ -650,7 +650,7 @@ footer {
 
 
     .section-about {
-        height: 1200px;
+        height: 1400px;
     }
 
     .section-about h1 {
@@ -659,7 +659,7 @@ footer {
     }
 
     .section-about .cards {
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 4em;
     }
 
@@ -667,7 +667,7 @@ footer {
     .section-about .card-left,
     .card-right {
         padding: 1em;
-        width: 30em;
+        width: 25em;
         gap: 3em;
     }
 
@@ -696,10 +696,7 @@ footer {
         gap: 1.2em;
         margin-left: 200px;
     }
-
-
-
-
+    
 
     .projects-sections {
         margin: 0 2em;
@@ -729,7 +726,7 @@ footer {
     .projects-sections .section-top>img,
     .section-bottom>img {
         border-radius: 15px;
-        width: 27em;
+        width: 35em;
         height: 15em;
     }
 
@@ -806,4 +803,4 @@ footer {
     }
 
 
-} */
+} 
