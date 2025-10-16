@@ -13,10 +13,6 @@
 }
 
 
-
-/* 2C3E50 */
-/* FF6B35 F7931E */
-
 :root {
     --dark: #2C3E50;
     --white: #ffffff;
@@ -27,13 +23,9 @@
     --green: #7CF03D;
 }
 
-/* 
-body {
-    
-} */
 
 
-/* main section :  */
+/* =====================================main section :=========================  */
 nav {
     background-color: var(--dark);
     padding: 1.5em;
@@ -81,7 +73,7 @@ main p {
     margin: .7em 0;
 }
 
-main .links ul {
+main ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +81,7 @@ main .links ul {
     margin: 1.4em 0 0 0;
 }
 
-main .links ul li a img {
+main ul li a img {
     width: 2em;
     height: 2em;
     border-radius: 50%;
@@ -97,7 +89,7 @@ main .links ul li a img {
 }
 
 
-main .links ul li a {
+main ul li a {
     color: var(--white);
     display: flex;
     justify-content: center;
@@ -106,19 +98,18 @@ main .links ul li a {
     border: 3px solid var(--white);
     padding: 5px 1.4em;
     border-radius: 30px;
-
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-main .links ul li a:hover {
+main ul li a:hover {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-/* section a propos de moi : */
+/* ====================================section a propos de moi :======================================== */
 
 
 .section-about {
@@ -237,11 +228,16 @@ main .links ul li a:hover {
     gap: 5.7em;
 }
 
-.section-left-info h3 {
+.section-left-info h3,
+.section-right-info h3 {
     color: var(--gold);
     letter-spacing: 3px;
     font-weight: 700;
     font-size: 30px;
+}
+
+.section-right-info h3 {
+    color: black;
 }
 
 .section-left-info p {
@@ -299,6 +295,12 @@ main .links ul li a:hover {
     padding: 0 2em;
 }
 
+.section-contact .section-left p {
+    letter-spacing: 1.3px;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+
 
 
 .section-contact .section-right {
@@ -349,17 +351,244 @@ textarea:focus {
     cursor: pointer;
 }
 
-.section-contact input[type=submit]:hover{
+.section-contact input[type=submit]:hover {
     color: var(--green);
     border: 1px solid var(--green);
     background-color: var(--white);
 }
 
 
-footer{
-    text-align: center ; 
+footer {
+    text-align: center;
     background-color: var(--dark);
-    /* border-top: 1px solid var(--white); */
-    padding: 1em 0 ;
+    padding: 1em 0;
     color: var(--white);
+}
+
+
+
+
+
+/* ============================ responsive =================================== */
+
+
+
+@media screen and (max-width : 700px) {
+
+    /* ============================ responsive navbar =================================== */
+    nav {
+        width: 100vw;
+    }
+
+    nav a {
+        font-size: 9px;
+    }
+
+
+    /* ============================ responsive main section =================================== */
+
+    main img {
+        width: 6em;
+        height: 6em;
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main h5 {
+        font-size: 1em;
+    }
+
+    main p {
+        font-size: calc(.3em + 1vw);
+    }
+
+    main ul {
+        gap: 1em;
+    }
+
+    main ul li {
+        font-size: 1em;
+    }
+
+    main ul li a img {
+        width: 1em;
+        height: 1em;
+    }
+
+    main ul li a {
+        font-size: 1em;
+        gap: 8px;
+        border: 2px solid var(--white);
+        padding: 4px 1.2em;
+    }
+
+
+
+    /* ============================ responsive a propos de moi =================================== */
+
+    .section-about {
+        height: 1200px;
+    }
+
+    .section-about h1 {
+        font-size: .9em;
+        padding: 2em 0;
+    }
+
+    .section-about .cards {
+        flex-direction: column;
+        gap: 4em;
+    }
+
+
+    .section-about .card-left,
+    .card-right {
+        padding: 1em;
+        width: 40em;
+        gap: 3em;
+        height: 80vh;
+        width: 400px;
+    }
+
+    .section-about .card-left h2,
+    .card-right h2 {
+        font-size: 20px;
+    }
+
+    .section-about .card-left p,
+    .card-right p {
+        letter-spacing: 1.2px;
+        line-height: 20px;
+        font-size: .8em;
+    }
+
+    .section-about .card-left a img,
+    .card-right a img {
+        width: 2em;
+        height: 2em;
+    }
+
+    .section-about .card-left a,
+    .card-right a {
+        font-size: .8em;
+        padding: 9px 12px;
+        gap: 1.4em;
+        margin-left: 240px;
+    }
+
+
+    /* ============================ responsive projects sections =================================== */
+
+
+
+    .projects-sections {
+        margin: 0 2em;
+
+    }
+
+    .projects-sections h1 {
+        padding: 1em 0;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+
+    .projects-sections .section-top,
+    .section-bottom {
+        gap: 1em;
+        margin-bottom: 8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .projects-sections .section-bottom {
+        flex-direction: column-reverse;
+    }
+
+    .projects-sections .section-top>img,
+    .section-bottom>img {
+        border-radius: 15px;
+        width: 35em;
+        height: 20em;
+    }
+
+    .projects-sections .section-left-info {
+        gap: 5em;
+    }
+
+    .section-left-info h3 {
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
+    .section-left-info p {
+        line-height: 20px;
+    }
+
+    .section-left-info a {
+        padding: 9px 12px;
+        border-radius: 40px;
+        gap: 1em;
+    }
+
+    .section-left-info a img {
+        width: 1em;
+        height: 1em;
+    }
+
+    /* ============================ responsive  sections contact =================================== */
+
+
+    .section-contact {
+        padding: 1em;
+        flex-direction: column;
+    }
+
+    .section-contact h1 {
+        font-size: 20px;
+        padding: 20px 0;
+    }
+
+    .section-contact .section-left,
+    .section-right {
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .section-contact .section-left p {
+        font-size: 11px;
+
+    }
+
+    .section-contact .section-right input,
+    textarea {
+        padding: 5px 10px;
+        margin-top: 5px;
+    }
+
+    .section-contact div {
+        margin-top: 2em;
+    }
+
+
+    .section-contact textarea {
+        height: 100px;
+    }
+
+    .section-contact .section-right .input-prenom-nom {
+        flex-direction: column;
+        gap: 0em;
+        align-items: unset;
+    }
+
+    .section-contact input[type=submit] {
+        font-size: 12px;
+    }
+
+
 }
